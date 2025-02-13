@@ -2,6 +2,7 @@
 #define PERSON_HPP
 
 #include<string>
+#include <iostream>
 using namespace std;
 
 class Person {
@@ -17,6 +18,7 @@ class Person {
         void setName(string);
         void setAge(int);
         void hasBirthday();
+        friend ostream& operator<<(ostream&, const Person&);
 
 };
 

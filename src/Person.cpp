@@ -46,3 +46,8 @@ void Person::hasBirthday()
 {
     age++;
 }
+
+ostream& operator<<(ostream& os, const Person& person) {
+    os << person.name << " is " << person.age << " years old.";
+    return os;
+}
